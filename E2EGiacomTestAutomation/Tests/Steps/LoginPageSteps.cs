@@ -12,7 +12,6 @@
     public class LoginPageSteps
     {
         private readonly LoginPage loginPage = new LoginPage();
-
         [Given(@"I open The login page")]
         public void GivenIOpenTheLoginPage()
         {

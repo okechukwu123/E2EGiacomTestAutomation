@@ -19,7 +19,7 @@ namespace E2EGiacomTestAutomation
             advertisementPage.ClickOnAdLink();
             
         }
-
+             
         [Then(@"I see modal Window")]
         public void ThenISeeModalWindow()
         {

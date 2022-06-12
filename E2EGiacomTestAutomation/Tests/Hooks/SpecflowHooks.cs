@@ -40,7 +40,7 @@
             }
         }
 
-       [AfterTestRun]
+        [AfterTestRun]
         public static void CloseBrowser()
         {
             Browser.DeleteCookies();

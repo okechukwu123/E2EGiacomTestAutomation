@@ -4,10 +4,11 @@
   In order to see landing page
 
 Background:
-	Given I open The login page
+	#Given I open The login page
 
 @ClearEnv
 Scenario: User log in with valid credentials
+	Given I open The login page
 	When I enter valid login credentials
 	Then I see landing page
 
