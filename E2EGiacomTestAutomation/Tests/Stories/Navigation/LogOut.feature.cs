@@ -35,7 +35,7 @@ namespace E2EGiacomTestAutomation.Tests.Stories.Navigation
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/Stories/Navigation", "LogOut", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/Stories/Navigation", "LogOut", "As a user I want to be able to logout.", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -75,29 +75,29 @@ namespace E2EGiacomTestAutomation.Tests.Stories.Navigation
         
         public virtual void FeatureBackground()
         {
-#line 2
-#line hidden
 #line 3
- testRunner.Given("I open The Internet page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 4
- testRunner.When("I enter valid login credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Given("I open The login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 5
+ testRunner.When("I enter valid login credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+#line 6
  testRunner.Then("I see landing page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("User log out")]
+        [NUnit.Framework.DescriptionAttribute("As a user I want to be able to log out")]
         [NUnit.Framework.CategoryAttribute("ClearEnv")]
-        public virtual void UserLogOut()
+        public virtual void AsAUserIWantToBeAbleToLogOut()
         {
             string[] tagsOfScenario = new string[] {
                     "ClearEnv"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("User log out", null, tagsOfScenario, argumentsOfScenario);
-#line 8
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("As a user I want to be able to log out", null, tagsOfScenario, argumentsOfScenario);
+#line 9
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -117,16 +117,16 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 2
+#line 3
 this.FeatureBackground();
 #line hidden
-#line 9
+#line 10
  testRunner.When("I click logout button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 10
+#line 11
  testRunner.Then("I  see \"Login Page\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-#line 11
+#line 12
  testRunner.But("I cannot reach landing page without login", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "But ");
 #line hidden
             }

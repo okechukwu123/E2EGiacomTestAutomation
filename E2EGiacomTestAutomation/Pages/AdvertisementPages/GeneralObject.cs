@@ -19,11 +19,9 @@ namespace E2EGiacomTestAutomation.Pages
         public IWebElement EntryAdDropDown => driver.FindElement(By.Id("dropdown"));
         public void SelectFromDropDown(string adDropDown) 
         {
-            EntryAdDropDown.Click();
+      
             SelectElement option = new SelectElement(EntryAdDropDown);
-            option.SelectByText(adDropDown);
-        
-        
+            option.SelectByText(adDropDown);     
         }
     }
 }

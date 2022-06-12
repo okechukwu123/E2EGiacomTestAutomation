@@ -35,7 +35,7 @@ namespace E2EGiacomTestAutomation.Tests.Stories.AdvertFutures
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/Stories/AdvertFutures", "Advertisment", "As a user I want to navigate to Advertisment page.", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Tests/Stories/AdvertFutures", "Advertisment", "As a user I want to navigate to Advertisment page and slect option 2", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -78,7 +78,7 @@ namespace E2EGiacomTestAutomation.Tests.Stories.AdvertFutures
 #line 4
 #line hidden
 #line 5
- testRunner.Given("I open The Internet page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I open The login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 6
  testRunner.When("I enter valid login credentials", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

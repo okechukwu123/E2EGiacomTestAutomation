@@ -13,15 +13,8 @@
     {
         private readonly LoginPage loginPage = new LoginPage();
 
-        
-        [When(@"I go to ""(.*)"" page")]
-        public void GivenIAmOnDashboardAfterLoggingIn(Pages page)
-        {
-            Browser.GoTo(page);
-        }
-
-        [Given(@"I open The Internet page")]
-        public void GivenIOpenLoginPage()
+        [Given(@"I open The login page")]
+        public void GivenIOpenTheLoginPage()
         {
             Browser.GoTo(Pages.Dashboard);
         }
@@ -36,7 +29,6 @@
         public void ThenISeeLandingPage()
         {
             this.loginPage.PageHeader("Task to be automated").IsDisplayedAfterWait().Should().BeTrue();
-            System.Console.WriteLine( "User Login");
             
         }
 

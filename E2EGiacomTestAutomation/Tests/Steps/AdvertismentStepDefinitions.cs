@@ -1,13 +1,8 @@
-using E2EGiacomTestAutomation.Pages;
+
 using E2EGiacomTestAutomation.Pages.AdvertisementPages;
 using E2EGiacomTestAutomation.Pages.CommonPage;
-using E2EGiacomTestAutomation.Utilities;
-using E2EGiacomTestAutomation.Utilities.Extensions;
 using FluentAssertions;
-using NUnit.Framework;
-using OpenQA.Selenium;
-using System;
-using System.Threading;
+using E2EGiacomTestAutomation.Utilities.Extensions;
 using TechTalk.SpecFlow;
 
 namespace E2EGiacomTestAutomation
@@ -17,8 +12,7 @@ namespace E2EGiacomTestAutomation
     {
        
         AdvertisementPage advertisementPage = new AdvertisementPage();
-        private CommonPage commonPage = new CommonPage();
-        
+       
         [When(@"I click on link Entry Ad")]
         public void WhenIClickOnLinkEntryAd()
         {
@@ -29,8 +23,8 @@ namespace E2EGiacomTestAutomation
         [Then(@"I see modal Window")]
         public void ThenISeeModalWindow()
         {
-            var modalWindow = advertisementPage.ModalWindow();
-           modalWindow.Should().BeTrue();    
+          var modalWindow = advertisementPage.ModalWindow();
+          modalWindow.Should().BeTrue();    
         }
 
         [Then(@"I can close modal window")]

@@ -16,13 +16,7 @@ namespace E2EGiacomTestAutomation.Tests.Steps
         {
             loginPage.LogOut();
          
-
         }
-        ////[Then(@"I  see login page")]
-        ////public void ThenISeeLoginPage()
-        ////{
-        ////    this.commonPage.PageHeader("Login Page").IsDisplayedAfterWait().Should().BeTrue();
-        ////}
         [Then(@"I  see ""([^""]*)""")]
         public void ThenISee(string headerText)
         {

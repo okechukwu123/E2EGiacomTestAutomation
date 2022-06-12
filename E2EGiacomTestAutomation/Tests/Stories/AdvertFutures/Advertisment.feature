@@ -1,8 +1,8 @@
 ﻿Feature: Advertisment
 
-As a user I want to navigate to Advertisment page.
+As a user I want to navigate to Advertisment page and slect option 2
 Background: 
-	Given I open The Internet page
+	Given I open The login page
 	When I enter valid login credentials
 	
 @ClearEnv
